@@ -60,7 +60,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #E5E5E5;
+  background-color: #fff;
   color: #000;
 }
 
@@ -117,6 +117,10 @@ h3 {
   font-size: 48px;
   font-weight: 400;
   color: #000;
+}
+
+.chapter-title {
+  font-size: 24px;
 }
 
 .content {
@@ -234,4 +238,142 @@ h3 {
   max-width: 1235px;
 }
 
+
+/* about-benefits */
+
+.about-us__benefits-block {
+  display: flex;
+  align-items: top;
+  margin-bottom: 100px;
+}
+
+.about-us__left-block {
+  margin-right: 32px;
+  padding-top: 426px;
+  max-width: 868px;
+
+  background: url("../img/about-img.jpg") no-repeat;
+  background-size: auto;
+  border-radius: 32px;
+}
+
+.about-us__upper-layer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-height: 196px;
+
+  padding: 50px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 32px;
+}
+
+.about-us__description {
+  margin-right: 160px;
+  color: #fff;
+}
+
+.about-us__link {
+  padding: 20px 30px;
+
+  color: #fff;
+
+  border: 3px solid #FF9900;
+  border-radius: 16px;
+}
+
+.about-us__right-block {
+  max-width: 870px;
+}
+
+.about-us__benefits {
+  padding: 65px 116px 65px 300px;
+  max-height: 296px;
+
+  border: 1px solid #CACACA;
+  border-radius: 32px;
+}
+
+.about-us__benefits:first-child {
+  margin-bottom: 32px;
+
+  background: url("../img/about-icon-top.svg") no-repeat 60px center;
+  background-size: 195px 160px;
+}
+
+.about-us__benefits:last-child {
+  padding: 65px 118px 65px 300px;
+  background: url("../img/about-icon-top.svg") no-repeat 60px center;
+}
+
+.about-us__benefits-heading {
+  margin-bottom: 8px;
+}
+/* endabout-benefits */
+
 /* endabout*/
+
+
+/* hww */
+
+.how-we-work__heading {
+  margin-bottom: 50px;
+}
+
+.how-we-work__list {
+  display: flex;
+}
+
+.how-we-work__item:not(:last-child) {
+  margin-right: 85px;
+  margin-bottom: 55px;
+
+  font-size: 18px;
+}
+
+.how-we-work__step-block {
+  display: flex;
+}
+
+.how-we-work__left-block {
+  margin-right: 142px;
+  max-width: 758px;
+  max-height: 100%;
+}
+
+.how-we-work__right-block {
+  margin-top: 10px;
+  width: 870px;
+  height: 460px;
+
+
+  background: url("../img/how-we-work-img.jpg") no-repeat left top;
+  background-size:auto;
+  border-radius: 32px;
+}
+
+.step-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+}
+
+.step-block__heading {
+  margin-bottom: 8px;
+
+  line-height: 32px;
+}
+
+.step-block__description {
+  margin-bottom: 18px;
+}
+
+.step-block__button  {
+  padding: 20px 38px;
+
+  font-size: 16px;
+}
+/* endhww */
