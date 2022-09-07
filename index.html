@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/icon/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Evklid</title>
@@ -38,10 +39,10 @@
             </ul>
           </nav>
           <button class="search-btn header__search btn-reset">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
               <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
-              </svg>
+            </svg>
           </button>
         </div>
       </div>
@@ -93,12 +94,28 @@
         </section>
 
         <section class="section how-we-work">
-          <h2 class="section__heading how-we-work__head ing">Как мы работаем</h2>
+          <h2 class="section__heading how-we-work__heading">Как мы работаем</h2>
           <ul class="step-list how-we-work__list list-reset">
-            <li class="how-we-work__item">1 шаг</li>
-            <li class="how-we-work__item">2 шаг</li>
-            <li class="how-we-work__item">3 шаг</li>
-            <li class="how-we-work__item">4 шаг</li>
+            <li class="how-we-work__item">
+              <button class="btn-reset step-list__button">
+                1 шаг
+              </button>
+            </li>
+            <li class="how-we-work__item">
+              <button class="btn-reset step-list__button">
+                2 шаг
+              </button>
+            </li>
+            <li class="how-we-work__item">
+              <button class="btn-reset step-list__button">
+                3 шаг
+              </button>
+            </li>
+            <li class="how-we-work__item">
+              <button class="btn-reset step-list__button">
+                4 шаг
+              </button>
+            </li>
           </ul>
           <div class="how-we-work__step-block">
             <div class="how-we-work__left-block">
@@ -123,7 +140,7 @@
         </section>
 
         <section class="section faq">
-          <h2 class="section__heading about-us__heading">Часто задаваемые вопросы</h2>
+          <h2 class="section__heading faq__heading">Часто задаваемые вопросы</h2>
           <ul class="faq__list list-reset">
             <li class="faq__item">
               <a href="#" class="faq__link">
@@ -273,23 +290,23 @@
             </ul>
           </div>
           <div class="footer__middle-block">
-            <h2 class="section__heading footer__heading">Оставить заявку</h2>
+            <h2 class="footer__heading">Оставить заявку</h2>
             <form class="form footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
               <input class="form__input" type="text" id="name-field" name="first-middle-last_name_user" placeholder="Фамилия, имя и отчество*">
               <br>
               <input class="form__input" type="email" id="email-field" name="email_user" placeholder="Email*">
               <br>
-              <textarea class="form__textarea" name="message_user" id="message-field" cols="30" rows="10">
-                Сообщение
-              </textarea>
+              <textarea class="form__textarea" name="message_user" id="message-field" cols="30" rows="10" placeholder="Сообщение"></textarea>
               <br>
-              <button class="btn form__btn btn-reset">Отправить данные</button>
-              <label class="form__label label-checkbox">
-                <input  class="form__input form__checkbox" type="checkbox" name="success_personal_data_treatment" checked>
-                <span class="label-checkbox__text">
-                  Согласен на обработку данных
-                </span>
-              </label>
+              <div class="form__interactive-elements">
+                <button class="btn form__btn btn-reset">Отправить данные</button>
+                <label class="form__label label-checkbox">
+                  <input  class="form__input form__checkbox" type="checkbox" name="success_personal_data_treatment" checked>
+                  <span class="label-checkbox__text">
+                    Согласен на обработку данных
+                  </span>
+                </label>
+              </div>
             </form>
           </div>
           <div class="footer__right-block">
