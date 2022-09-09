@@ -142,6 +142,7 @@ h3 {
 
 .btn:active {
   background-color: #E1670E;
+  outline: none;
 }
 
 .section__heading {
@@ -230,6 +231,7 @@ h3 {
 .header__link:active {
   color: #E1670E;
   border-bottom: 2px solid #E1670E;
+  outline: none;
 }
 
 .header__search,
@@ -246,10 +248,12 @@ h3 {
 
 .header__search:hover .header__icon rect {
   fill: #FF9900;
+  outline: none;
 }
 
 .header__search:hover .header__icon path {
   stroke: #FF9900;
+  outline: none;
 }
 
 
@@ -360,11 +364,13 @@ h3 {
 .about-us__link:focus,
 .about-us__link:hover {
   background-color: var(--order-default-color);
+  outline: none;
 }
 
 .about-us__link:active {
   background-color: var(--order-active-color);
   border: 3px solid var(--order-active-color);
+  outline: none;
 }
 
 .about-us__right-block {
@@ -430,6 +436,7 @@ h3 {
 
 .step-list__button:hover {
   color: var(--order-default-color);
+  outline: none;
 }
 
 .step-list__button:active {
@@ -528,6 +535,9 @@ h3 {
   margin-bottom: 32px;
 }
 
+.faq__item {
+  margin-bottom: -1px;
+}
 
 .faq__link {
   display: flex;
@@ -537,10 +547,6 @@ h3 {
 
   border-top: 1px solid transparent;
   border-bottom: 1px solid #CACACA;
-
-  transition-property: border;
-  transition-duration: var(--main-transition-duration);
-  transition-timing-function: var(--main-transition-timing-function);
 }
 
 
@@ -548,15 +554,77 @@ h3 {
   border-top: 1px solid #CACACA;
 }
 
+.faq__title {
+  font-weight: 700;
+  transition-property: color;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+}
+
+
+.faq__item:first-child > .faq__link:focus,
+.faq__item:first-child > .faq__link:hover {
+  border-top: 1px solid var(--order-default-color);
+  outline: none;
+}
+
+.faq__item:first-child > .faq__link:active,
+.faq__item:first-child > .faq__link:active {
+  border-top: 1px solid #CACACA;
+  outline: none;
+}
+
+.faq__link:focus,
 .faq__link:hover {
   border-top: 1px solid var(--order-default-color);
   border-bottom: 1px solid var(--order-default-color);
   color: var(--order-default-color);
+  outline: none;
 }
 
-.faq__title {
-  font-weight: 700;
+.faq__link:active,
+.faq__link:active {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #CACACA;
+  color: #000;
+  outline: none;
 }
+
+
+.faq__link ellipse,
+.faq__link path {
+  transition-property: fill;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+}
+
+.faq__link:focus ellipse,
+.faq__link:hover ellipse {
+  fill: var(--order-default-color);
+  outline: none;
+}
+
+.faq__link:active ellipse,
+.faq__link:active ellipse {
+  fill: #CACACA;
+  outline: none;
+}
+
+.faq__link:focus path,
+.faq__link:hover path {
+  fill: #fff;
+}
+
+.faq__link:active path,
+.faq__link:active path {
+  fill: #000;
+}
+
+.faq__link:active svg {
+  transform: rotate(45deg);
+}
+
+
 
 /* endFAQ */
 
@@ -577,6 +645,7 @@ h3 {
 
 .footer__left-block {
   margin-right: 350px;
+  min-width: 251px;
 }
 
 .footer__logo {
@@ -591,6 +660,47 @@ h3 {
   margin-bottom: 20px;
 }
 
+.footer__link {
+  transition-property: color;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+}
+
+.footer__link:focus {
+  color: #CACACA;
+  outline: 2px solid var(--order-default-color);
+}
+
+.footer__link:hover {
+  color: var(--order-default-color);
+  outline: none;
+}
+
+.footer__link:active {
+  color: var(--order-active-color);
+  outline: none;
+}
+
+.footer__link path {
+  transition-property: fill;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+}
+
+.footer__link:focus path {
+  fill: #666;
+}
+
+.footer__link:hover path {
+  fill: var(--order-default-color);
+}
+
+.footer__link:active path {
+  fill: #E1670E;
+}
+
+
+
 .footer__social-list {
   display: flex;
 }
@@ -602,7 +712,7 @@ h3 {
 }
 
 .footer__middle-block {
-  margin-right: 263px;
+  margin-right: 236px;
   max-width: 570px;
 }
 
@@ -624,6 +734,20 @@ h3 {
   background-color: #414141;
   border: none;
   border-radius: 16px;
+
+  transition-property: background-color;
+  transition-duration: var(--main-transition-duration);
+  transition-timing-function: var(--main-transition-timing-function);
+}
+
+.form__input:focus,
+.form__input:hover,
+.form__input:active,
+.form__textarea:focus,
+.form__textarea:hover,
+.form__textarea:active {
+  background-color: #666;
+  outline: none;
 }
 
 .form__input {
@@ -681,7 +805,8 @@ h3 {
 }
 
 .footer__right-block {
-  max-width: 363px;
+  min-width: 363px;
+  max-height: 320px;
 }
 
 .footer__content {
