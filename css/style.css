@@ -77,6 +77,7 @@ html {
 }
 
 body {
+
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
   outline: none;
@@ -316,19 +317,23 @@ h3 {
 .about-us__benefits-block {
   display: flex;
   align-items: flex-start;
+  align-items:stretch;
+
+
   margin-bottom: 100px;
+
 }
 
 .about-us__left-block {
   display: flex;
-  flex-grow: 1;
+  flex-direction: column-reverse;
 
   margin-right: 32px;
   padding-top: 426px;
-  max-width: 868px;
+  min-width: calc((100% / 2) - 32px);
 
   background: url("../img/about-img.jpg") no-repeat;
-  background-size: auto;
+  background-size: cover;
   border-radius: 32px;
 }
 
@@ -346,8 +351,9 @@ h3 {
 }
 
 .about-us__description {
+  margin-right: 15px;
   max-width: 433px;
-  /* margin-right: 160px; */
+
   color: #fff;
 }
 
@@ -380,13 +386,14 @@ h3 {
 .about-us__right-block {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  max-width: 870px;
+  justify-content: space-between;
+
+  max-width: calc(100% / 2);
 }
 
 .about-us__benefits {
   padding: 65px 116px 65px 300px;
-  max-height: 296px;
+  height: calc(100% / 2) - 32px;
   max-width: 870px;
 
   border: 1px solid #CACACA;
@@ -401,8 +408,8 @@ h3 {
 }
 
 .about-us__benefits:last-child {
-  padding: 65px 118px 65px 300px;
-  background: url("../img/about-icon-top.svg") no-repeat 60px center;
+  background: url("../img/about-icon-bottom.svg") no-repeat 60px center;
+  background-size: 195px 160px;
 }
 
 .about-us__benefits-heading {
@@ -455,6 +462,8 @@ h3 {
 .how-we-work__step-block {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+
   margin-bottom: 100px;
 }
 
