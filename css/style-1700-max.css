@@ -32,10 +32,6 @@
     padding-top: 20%;
   }
 
-  .about-us__left-block {
-    background-position: 50% 50%;
-  }
-
   .about-us__benefits {
     padding: 55px 66px 55px 200px;
   }
@@ -53,7 +49,6 @@
 }
 
 
-
 @media (max-width: 1532px) {
 
   .about-us__upper-layer {
@@ -63,6 +58,18 @@
   .about-us__benefits {
     padding: 25px 36px 25px 180px;
 
+  }
+
+}
+
+
+@media (max-width: 1410px) {
+  .footer__container {
+    justify-content: space-around;
+  }
+
+  .footer__right-block {
+    display: none;
   }
 
 }

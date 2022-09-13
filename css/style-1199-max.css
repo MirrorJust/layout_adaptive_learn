@@ -1,0 +1,152 @@
+@media (max-width: 1199px) {
+  .container-top,
+  .main {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+  .container {
+    margin: 0 50px;
+    max-width: 924px;
+  }
+
+  .header {
+    padding: 26px 0;
+    margin-bottom: 40px;
+  }
+
+  .header__main-navigation {
+    display: none;
+  }
+
+  .header__mobile-menu {
+    display: block;
+  }
+
+  .header__main-logo {
+    height: 48px;
+    width: 150px;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .search-icon--1200 {
+    display: block;
+  }
+
+  .hero {
+    margin-bottom: 35px;
+    padding: 160px 77px;
+
+    background: url("../img/max-size-1200/hero-pic-1024-1.jpg") no-repeat;
+    background-size: auto;
+  }
+
+  .hero__main-header {
+    margin-bottom: 16px;
+    max-width: 837px;
+
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__description {
+    margin-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-us__content {
+    margin-bottom: 60px;
+  }
+
+  .about-us__benefits-block {
+    flex-direction: column;
+  }
+
+  .about-us__left-block {
+    margin-bottom: 32px;
+    padding-top: 444px;
+    min-width: 100%;
+
+    background: url("../img/max-size-1200/about-pic-1024.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .about-us__upper-layer {
+    padding: 50px;
+  }
+
+  .about-us__right-block {
+    max-width: 100%;
+  }
+
+  .about-us__benefits {
+    padding: 65px 116px 65px 300px;
+    height: 100%;
+    max-width: 924px;
+
+    border: 1px solid #CACACA;
+    border-radius: 32px;
+  }
+
+  .about-us__benefits:first-child {
+    margin-bottom: 32px;
+
+    background: url("../img/about-icon-top.svg") no-repeat 60px center;
+    background-size: 195px 160px;
+  }
+
+  .about-us__benefits:last-child {
+    background: url("../img/about-icon-bottom.svg") no-repeat 60px center;
+    background-size: 195px 160px;
+  }
+
+  .how-we-work__step-block {
+    margin-bottom: 80px;
+  }
+
+  .how-we-work__right-block {
+    background: url("../img/max-size-1200/how-pic-1024-1.jpg") no-repeat left top;
+    background-size: cover;
+  }
+
+  .faq {
+    margin-bottom: 80px;
+  }
+
+  .footer__container {
+    justify-content: space-between;
+  }
+
+  .footer__left-block {
+    margin-right: 132px;
+  }
+
+  .form__btn {
+    padding: 19px 38px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .how-we-work__item:not(:last-child) {
+    margin-right: 55px;
+  }
+
+  .step-block__button,
+  .step-block__link {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .step-block__button {
+    margin-right: 10px;
+  }
+
+
+}

@@ -191,6 +191,10 @@ h3 {
   border-radius: 0 0 32px 32px;
 }
 
+.header__mobile-menu {
+  display: none;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -235,6 +239,10 @@ h3 {
   outline: none;
 }
 
+.search-icon--1200 {
+  display: none;
+}
+
 .header__search,
 .header__icon path,
 .header__icon rect {
@@ -277,7 +285,7 @@ h3 {
   max-width: 837px;
 
   font-size: 70px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 85px;
 
   color: #fff;
@@ -334,6 +342,7 @@ h3 {
 
   background: url("../img/about-img.jpg") no-repeat;
   background-size: cover;
+  background-position: center center;
   border-radius: 32px;
 }
 
@@ -470,7 +479,7 @@ h3 {
 .how-we-work__left-block {
 
   margin-right: 0;
-  max-width: 758px;
+  max-width: 43.24%;
 }
 
 .how-we-work__section {
@@ -480,14 +489,12 @@ h3 {
 .how-we-work__right-block {
   flex-grow: 1;
 
-  margin-left: 10px;
+  margin-left: 50px;
   margin-top: 10px;
-  max-width: 870px;
-  height: 460px;
-
+  max-width: 49%;
 
   background: url("../img/how-we-work-img.jpg") no-repeat left top;
-  background-size:auto;
+  background-size: cover;
   border-radius: 32px;
 }
 
@@ -723,12 +730,9 @@ h3 {
   fill: #E1670E;
 }
 
-
-
 .footer__social-list {
   display: flex;
 }
-
 
 .social-list__item:not(:last-child) {
   margin-right: 25px;
@@ -736,7 +740,6 @@ h3 {
 }
 
 .footer__middle-block {
-  margin-right: 20px;
   max-width: 570px;
 }
 
@@ -748,10 +751,9 @@ h3 {
   color: #fff;
 }
 
-
 .form__input,
 .form__textarea {
-  width: 570px;
+  width: 100%;
 
   color: #CACACA;
 
@@ -829,6 +831,7 @@ h3 {
 }
 
 .footer__right-block {
+  margin-left: 40px;
   max-width: 363px;
   max-height: 320px;
 }
