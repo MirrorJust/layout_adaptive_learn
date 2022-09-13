@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+  .container-top,
+  .main {
+  margin: 0 auto;
+  /* max-width: 768px; */
+}
+
+  .container {
+    margin: 0 50px;
+    /* max-width: 768px; */
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+/* hero */
+
+  .hero {
+    padding: 160px 40px;
+
+    background: url("../img/max-size-768/hero-pic-768-1.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .hero__main-header {
+    max-width: 588px;
+
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+/* endhero */
+
+/* about */
+  .about-us__left-block {
+    padding-top: 454px;
+    min-width: 100%;
+
+    background: url("../img/max-size-768/about-pic-768-1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .about-us__upper-layer {
+    padding: 34px 40px;
+  }
+
+  .about-us__description {
+    max-width: 366px;
+  }
+
+  .about-us__benefits {
+    padding: 35px 45px 35px 169px;
+
+    border: 1px solid #CACACA;
+    border-radius: 32px;
+  }
+
+  .about-us__benefits:first-child {
+    background: url("../img/about-icon-top.svg") no-repeat 40px center;
+    background-size: 114px 99px;
+  }
+
+  .about-us__benefits:last-child {
+    background: url("../img/about-icon-bottom.svg") no-repeat 40px center;
+    background-size: 114px 99px;
+  }
+
+
+/* endabout */
+
+
+/* hww */
+
+.how-we-work__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+}
+  .how-we-work__step-block {
+    flex-direction: column-reverse;
+  }
+
+  .how-we-work__left-block {
+    max-width: 100%;
+  }
+
+  .how-we-work__right-block {
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 35px;
+    min-height: 284px;
+    max-width: 100%;
+
+    background: url("../img/how-we-work-img.jpg") no-repeat left top;
+    background-size: cover;
+    border-radius: 32px;
+  }
+
+  .step-block__button,
+  .step-block__link {
+    margin-right: 32px;
+    padding: 21px 38px;
+  }
+
+  .step-block__link {
+    margin-right: 0;
+  }
+
+/* endhww */
+
+/* footer */
+
+.footer__container {
+  flex-direction: column-reverse;
+}
+
+.footer__list-navigation {
+  display: none;
+}
+/* endfooter */
+}

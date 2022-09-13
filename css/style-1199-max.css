@@ -36,12 +36,14 @@
     display: block;
   }
 
+/* hero */
+
   .hero {
     margin-bottom: 35px;
     padding: 160px 77px;
 
     background: url("../img/max-size-1200/hero-pic-1024-1.jpg") no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
 
   .hero__main-header {
@@ -59,6 +61,9 @@
     line-height: 24px;
   }
 
+  /* endhero */
+
+  /* about */
   .about-us__content {
     margin-bottom: 60px;
   }
@@ -68,6 +73,7 @@
   }
 
   .about-us__left-block {
+    margin-right: 0;
     margin-bottom: 32px;
     padding-top: 444px;
     min-width: 100%;
@@ -82,12 +88,14 @@
   }
 
   .about-us__right-block {
+    flex-flow: row wrap;
+
     max-width: 100%;
-  }
+}
 
   .about-us__benefits {
     padding: 65px 116px 65px 300px;
-    height: 100%;
+    min-height: 100%;
     max-width: 924px;
 
     border: 1px solid #CACACA;
@@ -95,7 +103,6 @@
   }
 
   .about-us__benefits:first-child {
-    margin-bottom: 32px;
 
     background: url("../img/about-icon-top.svg") no-repeat 60px center;
     background-size: 195px 160px;
@@ -105,6 +112,8 @@
     background: url("../img/about-icon-bottom.svg") no-repeat 60px center;
     background-size: 195px 160px;
   }
+
+  /* endabout */
 
   .how-we-work__step-block {
     margin-bottom: 80px;
@@ -133,7 +142,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 968px) {
   .how-we-work__item:not(:last-child) {
     margin-right: 55px;
   }
@@ -148,5 +157,8 @@
     margin-right: 10px;
   }
 
+  .footer__left-block {
+    margin-right: 20px;
+  }
 
 }
