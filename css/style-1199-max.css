@@ -72,7 +72,7 @@
     flex-direction: column;
   }
 
-  .about-us__left-block {
+  .about-us__left-block--desktop {
     margin-right: 0;
     margin-bottom: 32px;
     padding-top: 444px;

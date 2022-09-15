@@ -1,9 +1,11 @@
 @media (max-width: 768px) {
+
+
   .container-top,
   .main {
   margin: 0 auto;
   /* max-width: 768px; */
-}
+  }
 
   .container {
     margin: 0 50px;
@@ -38,7 +40,7 @@
 /* endhero */
 
 /* about */
-  .about-us__left-block {
+  .about-us__left-block--desktop {
     padding-top: 454px;
     min-width: 100%;
 
@@ -59,7 +61,7 @@
     padding: 35px 45px 35px 169px;
 
     border: 1px solid #CACACA;
-    border-radius: 32px;
+    border-radius: var(--border-radius-main);
   }
 
   .about-us__benefits:first-child {
@@ -102,7 +104,7 @@
 
     background: url("../img/how-we-work-img.jpg") no-repeat left top;
     background-size: cover;
-    border-radius: 32px;
+    border-radius: var(--border-radius-main);
   }
 
   .step-block__button,
@@ -121,10 +123,24 @@
 
 .footer__container {
   flex-direction: column-reverse;
+  align-items: flex-start;
 }
 
 .footer__list-navigation {
   display: none;
+}
+
+.footer__middle-block {
+  margin-bottom: 50px;
+}
+
+.footer__left-block {
+  margin-right: 0;
+}
+
+.footer__logo {
+  margin-bottom: 16px;
+  margin-right: 0;
 }
 /* endfooter */
 }

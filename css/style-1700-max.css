@@ -28,7 +28,7 @@
 
 @media (max-width: 1727px) {
 
-  .about-us__left-block {
+  .about-us__left-block--desktop {
     padding-top: 20%;
   }
 
@@ -37,7 +37,6 @@
   }
 
   .about-us__benefits:first-child {
-
     background: url("../img/about-icon-top.svg") no-repeat 30px center;
     background-size: 20% auto;
   }

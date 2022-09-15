@@ -61,6 +61,9 @@
   --content-line-height:32px;
   --content-color: #000;
 
+  --border-radius-main: 32px;
+  --border-radius-second: 16px;
+
   --order-default-color: #FF9900;
   --order-hover-color: #FFB84D;
   --order-focus-color: #FFB84D;
@@ -130,7 +133,7 @@ h3 {
   color: #fff;
 
   background-color: #FF9900;
-  border-radius: 16px;
+  border-radius: var(--border-radius-second);
 
   transition-property: background-color;
   transition-duration: var(--main-transition-duration);
@@ -188,7 +191,7 @@ h3 {
 
   background-color: #fff;
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 32px 32px;
+  border-radius: 0 0 var(--border-radius-main) var(--border-radius-main);
 }
 
 .header__mobile-menu {
@@ -277,7 +280,7 @@ h3 {
   background: url("../img/hero-first-img.jpg") no-repeat;
   background-size: auto;
 
-  border-radius: 32px;
+  border-radius: var(--border-radius-main);
 }
 
 .hero__main-header {
@@ -332,7 +335,11 @@ h3 {
 
 }
 
-.about-us__left-block {
+.about-us__left-block--mobile {
+  display: none;
+}
+
+.about-us__left-block--desktop {
   display: flex;
   flex-direction: column-reverse;
 
@@ -343,7 +350,7 @@ h3 {
   background: url("../img/about-img.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
-  border-radius: 32px;
+  border-radius: var(--border-radius-main);
 }
 
 .about-us__upper-layer {
@@ -356,7 +363,7 @@ h3 {
   width: 100%;
 
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 32px;
+  border-radius: var(--border-radius-main);
 }
 
 .about-us__description {
@@ -372,7 +379,7 @@ h3 {
   color: #fff;
 
   border: 3px solid #FF9900;
-  border-radius: 16px;
+  border-radius: var(--border-radius-second);
   cursor: pointer;
 
   transition-property: background-color, border;
@@ -409,7 +416,7 @@ h3 {
   max-width: 870px;
 
   border: 1px solid #CACACA;
-  border-radius: 32px;
+  border-radius: var(--border-radius-main);
 }
 
 .about-us__benefits:first-child {
@@ -499,7 +506,7 @@ h3 {
 
   background: url("../img/how-we-work-img.jpg") no-repeat left top;
   background-size: cover;
-  border-radius: 32px;
+  border-radius: var(--border-radius-main);
 }
 
 .step-block {
@@ -536,7 +543,7 @@ h3 {
 
   line-height: 19.5px;
   border: 1px solid #333;
-  border-radius: 16px;
+  border-radius: var(--border-radius-second);
 
   transition-property: background-color, border, color;
   transition-duration: var(--main-transition-duration);
