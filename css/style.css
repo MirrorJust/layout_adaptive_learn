@@ -665,6 +665,9 @@ h3 {
   transform: rotate(45deg);
 }
 
+.faq__icon--mobile {
+  display: none;
+}
 
 
 /* endFAQ */

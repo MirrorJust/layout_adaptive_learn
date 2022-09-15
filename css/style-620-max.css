@@ -56,6 +56,11 @@
 /* endhero */
 
 /* about */
+
+  .about-us__benefits-block {
+    margin-bottom: 60px;
+  }
+
   .about-us__content {
     margin-bottom: 14px;
   }
@@ -68,6 +73,7 @@
     display: block;
 
     margin-right: 0;
+    margin-bottom: 32px;
     padding-top: 0;
     width: 100%;
 
@@ -108,16 +114,114 @@
 
   .about-us__link {
     padding: 12px 44px;
+    max-width: 162px;
 
-
+    font-size: 12px;
     font-weight: 700;
     color: #FF9900;
 
     border: 2px solid #FF9900;
     border-radius: var(--border-radius-second);
-    cursor: pointer;
 
   }
 
+  .about-us__benefits {
+    padding: 61px 0 0 0;
+
+    border: none;
+  }
+
+  .about-us__benefits:first-child {
+    background: url("../img/about-icon-top.svg") no-repeat 0 top;
+    background-size: 64px 49px;
+  }
+
+  .about-us__benefits:last-child {
+    background: url("../img/about-icon-bottom.svg") no-repeat 0 top;
+    background-size: 64px 49px;
+  }
+
+  .chapter-title {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
 /* endabout */
+
+/* hww */
+  .how-we-work__heading {
+    margin-bottom: 20px;
+  }
+
+  .how-we-work__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .how-we-work__list,
+  .how-we-work__right-block {
+    margin-bottom: 16px;
+  }
+
+  .step-block__heading {
+    margin-bottom: 8px;
+  }
+
+  .step-block__button {
+    margin-right: 8px;
+    padding: 12px 44px;
+    max-width: 162px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+
+    border-radius: var(--border-radius-second);
+  }
+
+  .step-block__link {
+    padding: 12px 32px;
+    max-height: 39px;
+    max-width: 118px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .how-we-work__step-block {
+    margin-bottom: 60px;
+  }
+/* endhww */
+
+/* faq */
+  .faq__heading {
+    margin-bottom: 16px;
+  }
+
+
+  .faq__title {
+    font-size: 14px;
+  }
+
+  .faq__icon--desktop {
+    display: none;
+  }
+
+  .faq__icon--mobile {
+    display: inline-block;
+  }
+
+
+/* endfaq */
+
+}
+
+@media (max-width: 400px) {
+  .step-list__button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
 }

@@ -139,6 +139,10 @@
   .form__btn {
     padding: 19px 38px;
   }
+
+  .footer__right-block {
+    display: none;
+  }
 }
 
 
