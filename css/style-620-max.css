@@ -216,6 +216,65 @@
 
 /* endfaq */
 
+/* footer */
+
+  .footer {
+    padding: 33px 0;
+
+    background-color: #222;
+    color: #CACACA;
+  }
+
+  .footer__container {
+    align-items: center;
+  }
+
+  .footer__heading {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+  }
+
+  .form__interactive-elements {
+    flex-direction: column;
+
+    padding-bottom: 16px;
+    border-bottom: 1px solid #414141;
+  }
+
+  .footer__left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .form__textarea {
+    margin-bottom: 25px;
+  }
+
+  .form__btn {
+    margin-right: 0;
+  }
+
+  .label-checkbox__text {
+    font-size: 16px;
+  }
+
+  .footer__logo {
+    margin: 0 0 16px 0 ;
+
+    width: 131px;
+    height: 42px;
+  }
+
+  .footer__icon-social {
+    height: 40px;
+    width: 40px;
+  }
+
+/* endgooter */
+
 }
 
 @media (max-width: 400px) {

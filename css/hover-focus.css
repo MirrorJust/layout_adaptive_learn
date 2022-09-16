@@ -1,0 +1,100 @@
+@media (min-width: 1000px) {
+  .btn:focus,
+  .btn:hover {
+    background-color: #FFB84D;
+    outline: none;
+  }
+
+  .header__link:focus {
+    outline: 2px solid #FF9900;
+  }
+
+  .header__link:hover {
+    border-bottom: 2px solid #FF9900;
+    outline: none;
+  }
+
+  .header__search:focus {
+    outline: 2px solid #FF9900;
+  }
+
+  .header__search:hover .header__icon rect {
+    fill: #FF9900;
+    outline: none;
+  }
+
+  .header__search:hover .header__icon path {
+    stroke: #FF9900;
+    outline: none;
+  }
+
+  .about-us__link:focus,
+  .about-us__link:hover {
+    background-color: var(--order-default-color);
+    outline: none;
+  }
+
+  .step-list__button:focus {
+    outline: 2px solid var(--order-default-color);
+  }
+
+  .step-list__button:hover {
+    color: var(--order-default-color);
+    outline: none;
+  }
+
+  .step-block__link:focus,
+  .step-block__link:hover {
+    color: #fff;
+
+    background-color: #666;
+    border: 1px solid #666;
+  }
+
+  .faq__item:first-child > .faq__link:focus,
+  .faq__item:first-child > .faq__link:hover {
+    border-top: 1px solid var(--order-default-color);
+    outline: none;
+  }
+
+  .faq__link:focus,
+  .faq__link:hover {
+    border-top: 1px solid var(--order-default-color);
+    border-bottom: 1px solid var(--order-default-color);
+    color: var(--order-default-color);
+    outline: none;
+  }
+
+  .faq__link:focus path,
+  .faq__link:hover path {
+    fill: #fff;
+  }
+
+  .footer__link:focus {
+    color: #CACACA;
+    outline: 2px solid var(--order-default-color);
+  }
+
+  .footer__link:hover {
+    color: var(--order-default-color);
+    outline: none;
+  }
+
+  .footer__link:focus path {
+    fill: #666;
+  }
+
+  .footer__link:hover path {
+    fill: var(--order-default-color);
+  }
+
+  .form__input:focus,
+  .form__input:hover,
+  .form__input:active,
+  .form__textarea:focus,
+  .form__textarea:hover,
+  .form__textarea:active {
+    background-color: #666;
+    outline: none;
+  }
+}
