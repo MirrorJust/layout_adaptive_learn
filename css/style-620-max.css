@@ -283,4 +283,30 @@
     font-weight: 400;
     line-height: 17px;
   }
+
+    /* Открытие бургер меню ------------------------------------------------------- */
+
+    .body-overflow-hidden {
+      overflow: hidden;
+    }
+
+    .header__burger-menu {
+      padding: 23px 0 0 15px;
+    }
+
+    .header__burger-menu-btn--mobile {
+      margin-bottom: 32px;
+    }
+
+    .burger-menu__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    .burger-menu__link {
+      font-size: 16px;
+    }
+        /* Открытие бургер меню ------------------------------------------------------- */
 }
+
+
+

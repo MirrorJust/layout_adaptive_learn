@@ -208,6 +208,8 @@ h3 {
   display: flex;
 }
 
+
+
 .header__list-navigation {
   display: flex;
 }
@@ -751,3 +753,49 @@ h3 {
 }
 /* endfooter */
 
+  /* Открытие бургер меню ------------------------------------------------------- */
+
+.body-overflow-hidden {
+  position: fixed;
+  overflow: hidden;
+}
+
+.header__burger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 38px 0 0 50px;
+  height: 100vh;
+  min-width: 100%;
+
+  background-color: #fff;
+
+  transform: translateX(-101%);
+  transition: transform 0.3s ease;
+
+  z-index: 6;
+  overflow-y: auto;
+}
+
+.header__burger-menu-btn--mobile {
+  margin-bottom: 107px;
+}
+
+.burger-menu__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.burger-menu__link {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+
+.header__burger-menu--active {
+  transform: none;
+
+}
+
+    /* Открытие бургер меню ------------------------------------------------------- */

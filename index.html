@@ -7,14 +7,14 @@
   <link rel="icon" href="img/icon/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-1700-max.css">
+  <link rel="stylesheet" href="css/style-1907-max.css">
   <link rel="stylesheet" href="css/style-1199-max.css">
   <link rel="stylesheet" href="css/style-768-max.css">
   <link rel="stylesheet" href="css/style-620-max.css">
   <link rel="stylesheet" href="css/hover-focus.css">
   <title>Evklid</title>
 </head>
-<body>
+<body class="body">
   <header class="header">
     <div class="container-top">
       <div class="container header__container">
@@ -26,6 +26,31 @@
               <rect y="20" width="30" height="3" fill="black"/>
             </svg>
           </button>
+          <nav class="header__burger-menu">
+            <button class="header__burger-menu-btn--mobile btn-reset">
+              <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+                <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+              </svg>
+            </button>
+            <ul class="header__burger-list list-reset">
+              <li class="burger-menu__item">
+                <a href="#" class="burger-menu__link">О нас</a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="burger-menu__link">Проекты</a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="burger-menu__link">Этапы</a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="burger-menu__link">Отзывы</a>
+              </li>
+              <li class="burger-menu__item">
+                <a href="#" class="burger-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="header__left-block">
           <a href="#" class="header__link">
@@ -355,5 +380,6 @@
       </div>
     </footer>
 
+<script src="./index.js"></script>
 </body>
 </html>
