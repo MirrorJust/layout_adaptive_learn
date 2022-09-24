@@ -119,8 +119,23 @@
     margin-bottom: 80px;
   }
 
-  .how-we-work__right-block {
+  .how-we-work__right-block--first-bg {
     background: url("../img/max-size-1200/how-pic-1024-1.jpg") no-repeat left top;
+    background-size: cover;
+  }
+
+  .how-we-work__right-block--second-bg {
+    background: url("../img/max-size-1200/how-pic-1024-2.jpg") no-repeat left top;
+    background-size: cover;
+  }
+
+  .how-we-work__right-block--third-bg {
+    background: url("../img/max-size-1200/how-pic-1024-3.jpg") no-repeat left top;
+    background-size: cover;
+  }
+
+  .how-we-work__right-block--fourth-bg {
+    background: url("../img/max-size-1200/how-pic-1024-4.jpg") no-repeat left top;
     background-size: cover;
   }
 
@@ -136,12 +151,18 @@
     margin-right: 132px;
   }
 
+
+
   .form__btn {
     padding: 19px 38px;
   }
 
   .footer__right-block {
     display: none;
+  }
+
+  .step-list__button--active {
+    color: var(--order-default-color);
   }
 }
 
@@ -160,6 +181,11 @@
   .step-block__button {
     margin-right: 10px;
   }
+
+  .faq_link-description {
+    max-width: 85%;
+  }
+
 
   .footer__left-block {
     margin-right: 20px;

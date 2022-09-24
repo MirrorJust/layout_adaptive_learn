@@ -1,3 +1,5 @@
+// burger-menu
+
 let burgerButtonOpen = document.querySelector('.header__burger-menu-btn');
 let burgerButtonClose = document.querySelector('.header__burger-menu-btn--mobile');
 let burgerMenu = document.querySelector('.header__burger-menu');
@@ -20,5 +22,7 @@ menuLinks.forEach(function(el) {
     body.classList.remove('body-overflow-hidden');
   })
 })
+
+// endburger-menu
 
 

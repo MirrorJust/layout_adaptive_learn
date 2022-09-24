@@ -247,11 +247,10 @@ h3 {
 /* hero */
 
 .hero {
+  position: relative;
+
   margin-bottom: 50px;
   padding: 100px 0 100px 85px;
-
-  background: url("../img/hero-first-img.jpg") no-repeat;
-  background-size: auto;
 
   border-radius: var(--border-radius-main);
 }
@@ -265,6 +264,8 @@ h3 {
   line-height: 85px;
 
   color: #fff;
+
+  z-index: 5;
 }
 
 .hero__description {
@@ -276,6 +277,14 @@ h3 {
   line-height: 30px;
 
   color: #fff;
+}
+
+.hero__main-header,
+.hero__description,
+.hero__btn {
+  position: relative;
+
+  z-index: 5;
 }
 
 /* endhero */
@@ -459,9 +468,27 @@ h3 {
   margin-top: 10px;
   max-width: 49%;
 
-  background: url("../img/how-we-work-img.jpg") no-repeat left top;
-  background-size: cover;
   border-radius: var(--border-radius-main);
+}
+
+.how-we-work__right-block--first-bg {
+  background: url("../img/hww-pic-1920-1.jpg") no-repeat left top;
+  background-size: cover;
+}
+
+.how-we-work__right-block--second-bg {
+  background: url("../img/hww-pic-1920-2.jpg") no-repeat left top;
+  background-size: cover;
+}
+
+.how-we-work__right-block--third-bg {
+  background: url("../img/hww-pic-1920-3.jpg") no-repeat left top;
+  background-size: cover;
+}
+
+.how-we-work__right-block--fourth-bg {
+  background: url("../img/hww-pic-1920-4.jpg") no-repeat left top;
+  background-size: cover;
 }
 
 .step-block {
@@ -529,6 +556,7 @@ h3 {
 
 .faq__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
@@ -543,10 +571,23 @@ h3 {
 }
 
 .faq__title {
+  max-width: 90%;
+
   font-weight: 700;
   transition-property: color;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
+}
+
+.faq_link-description {
+  display: none;
+
+  margin-top: 30px;
+  max-width: 60%;
+}
+
+.faq_link-description--active {
+  display: block;
 }
 
 .faq__item:first-child > .faq__link:active,
@@ -569,6 +610,8 @@ h3 {
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
 }
+
+
 
 .faq__link:focus ellipse,
 .faq__link:hover ellipse {
@@ -799,3 +842,19 @@ h3 {
 }
 
     /* Открытие бургер меню ------------------------------------------------------- */
+
+
+/* Табы */
+
+
+.tab-item {
+  display: none;
+}
+
+.tab-item--active {
+  display: flex;
+}
+
+
+
+/* Табы */

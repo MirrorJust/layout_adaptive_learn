@@ -63,6 +63,11 @@
 
 
 @media (max-width: 1410px) {
+
+  .faq_link-description {
+    max-width: 75%;
+  }
+
   .footer__container {
     justify-content: space-around;
   }

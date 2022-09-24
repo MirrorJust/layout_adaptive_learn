@@ -6,7 +6,7 @@
   --content-font-size: 14px;
   --content-line-height:28px;
 
-  --border-radius-main: 16px;
+  --border-radius-main: 32px;
   --border-radius-second: 8px;
 }
 
@@ -32,9 +32,6 @@
     padding: 60px 21px;
 
     text-align: center;
-/*
-    background: url("../img/max-size-620/hero-pic-320-1.jpg") no-repeat;
-    background-size: cover; */
   }
 
   .hero__main-header {
@@ -179,6 +176,30 @@
     line-height: 15px;
 
     border-radius: var(--border-radius-second);
+  }
+
+  .how-we-work__right-block--first-bg {
+    background: url("../img/max-size-620/how-pic-320-1.jpg") no-repeat left top;
+    background-size: cover;
+
+  }
+
+  .how-we-work__right-block--second-bg {
+    background: url("../img/max-size-620/how-pic-320-2.jpg") no-repeat left top;
+    background-size: cover;
+
+  }
+
+  .how-we-work__right-block--third-bg {
+    background: url("../img/max-size-620/how-pic-320-3.jpg") no-repeat left top;
+    background-size: cover;
+
+  }
+
+  .how-we-work__right-block--fourth-bg {
+    background: url("../img/max-size-620/how-pic-320-4.jpg") no-repeat left top;
+    background-size: cover;
+
   }
 
   .step-block__link {

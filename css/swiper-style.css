@@ -1,0 +1,116 @@
+.swiper.swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  border-radius: var(--border-radius-main);
+}
+
+.first-slide {
+  min-width: 100%;
+
+  background: url("../img/hero-pic-1920-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.second-slide {
+  min-width: 100%;
+
+  background: url("../img/hero-pic-1920-2.jpg") no-repeat;
+  background-size: cover;
+}
+.third-slide {
+  min-width: 100%;
+
+  background: url("../img/hero-pic-1920-3.jpg") no-repeat;
+  background-size: cover;
+}
+
+.swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+
+  background-color: #cacaca;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .first-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-1200/hero-pic-1024-1.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .second-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-1200/hero-pic-1024-2.jpg") no-repeat;
+    background-size: cover;
+  }
+  .third-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-1200/hero-pic-1024-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-768/hero-pic-768-1.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .second-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-768/hero-pic-768-2.jpg") no-repeat;
+    background-size: cover;
+  }
+  .third-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-768/hero-pic-768-3.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .first-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-620/hero-pic-320-1.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .second-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-620/hero-pic-320-2.jpg") no-repeat;
+    background-size: cover;
+  }
+  .third-slide {
+    min-width: 100%;
+
+    background: url("../img/max-size-620/hero-pic-320-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}

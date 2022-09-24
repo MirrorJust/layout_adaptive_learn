@@ -102,9 +102,35 @@
     min-height: 284px;
     max-width: 100%;
 
-    background: url("../img/how-we-work-img.jpg") no-repeat left top;
-    background-size: cover;
     border-radius: var(--border-radius-main);
+  }
+
+  .how-we-work__right-block--first-bg {
+    background: url("../img/max-size-768/how-pic-768-1.jpg") no-repeat left top;
+    background-size: cover;
+
+    border-radius: 24px;
+  }
+
+  .how-we-work__right-block--second-bg {
+    background: url("../img/max-size-768/how-pic-768-2.jpg") no-repeat left top;
+    background-size: cover;
+
+    border-radius: 24px;
+  }
+
+  .how-we-work__right-block--third-bg {
+    background: url("../img/max-size-768/how-pic-768-3.jpg") no-repeat left top;
+    background-size: cover;
+
+    border-radius: 24px;
+  }
+
+  .how-we-work__right-block--fourth-bg {
+    background: url("../img/max-size-768/how-pic-768-4.jpg") no-repeat left top;
+    background-size: cover;
+
+    border-radius: 24px;
   }
 
   .step-block__button,

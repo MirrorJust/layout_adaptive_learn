@@ -98,3 +98,11 @@
     outline: none;
   }
 }
+
+
+@media (max-width: 999px) {
+  .step-list__button:focus {
+    color: #000;
+  }
+
+}
