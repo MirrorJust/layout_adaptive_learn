@@ -27,7 +27,7 @@ menuLinks.forEach(function(el) {
 
 // serch string
 
-let searchOpen = document.querySelector('.header__search-open');
+let searchOpen = document.querySelector('.header__search');
 let searchCLose = document.querySelector('.header__search-close');
 searchOpen.onclick = function() {
   document.querySelector('.header_search-block').classList.add('header_search-block--active');

@@ -80,20 +80,23 @@
               </li>
             </ul>
           </nav>
-          <button class="search-btn header__search header__search-open btn-reset">
+          <button class="search-btn header__search header__search btn-reset">
             <svg class="header__icon search-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
-              <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
-            </svg>
-            <svg class="header__icon search-icon--1200" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
               <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
             </svg>
           </button>
           <div class="header_search-block">
             <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-              <input type="text" class="header__input" placeholder="Что будем искать?">
+              <input type="text" class="header__input" name="search-request" placeholder="Что будем искать?">
+              <button type="submit" class="search-btn header__search header__search-open btn-reset">
+                <svg class="header__icon search-icon search-icon--open" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
+                  <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
+                </svg>
+              </button>
             </form>
+
             <button class="search-btn header__search header__search-close btn-reset">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8.9541" y="7.30444" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30444)" fill="#CACACA"/>
@@ -514,7 +517,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="scripts/index.js"></script>
+  <script src="scripts/header.js"></script>
   <script src="scripts/swiper-block.js" ></script>
   <script src="scripts/tabs.js"></script>
   <script  src="scripts/accordion.js"></script>

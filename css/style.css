@@ -239,8 +239,6 @@ h3 {
   transition-property: fill, stroke;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
-
-  z-index: 1;
 }
 
 
@@ -267,11 +265,13 @@ h3 {
 }
 
 .header__form {
-  max-width: 412px;
+  display: flex;
+  max-width: 100%;
 }
 
 .header__input {
-  width: 412px;
+  margin-right: 14px;
+  min-width: 412px;
 
   border: none;
   border-bottom: 1px solid #cacaca;
@@ -286,8 +286,12 @@ h3 {
   display: inline-block;
 }
 
-.header__search-open--active {
+.search-icon--open rect {
   fill: #FF9900;
+}
+
+.search-icon--open path {
+  stroke: #FF9900;
 }
 /* Поиск в header */
 
