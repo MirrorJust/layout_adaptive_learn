@@ -835,6 +835,56 @@ h3 {
 
 }
 
+.label-checkbox {
+  cursor: pointer;
+}
+
+.label-checkbox__checkbox {
+  display: none;
+}
+
+.label-checkbox__fake {
+  display: inline-block;
+  position: relative;
+
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+
+  background-color: #222;
+  border: 1px solid #CACACA;
+}
+
+.label-checkbox__fake::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 10px;
+  height: 8px;
+  background: url("../img/icon/check-mark.svg") no-repeat;
+
+  opacity: 0;
+}
+
+.label-checkbox__checkbox:checked + .label-checkbox__fake::before {
+  opacity: 1;
+}
+
+.label-checkbox:focus-within  {
+  outline: 2px solid #FF9900;
+}
+
+.footer__content {
+  margin-top: 87px;
+}
+
+
+
 .footer__right-block {
   margin-left: 40px;
   max-width: 363px;
