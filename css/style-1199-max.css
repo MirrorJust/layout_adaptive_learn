@@ -28,6 +28,10 @@
     width: 150px;
   }
 
+  .header_search-block {
+    top: -70%;
+  }
+
   .search-icon {
     display: none;
   }

@@ -205,10 +205,9 @@ h3 {
 }
 
 .header__right-block {
+  position: relative;
   display: flex;
 }
-
-
 
 .header__list-navigation {
   display: flex;
@@ -240,7 +239,57 @@ h3 {
   transition-property: fill, stroke;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
+
+  z-index: 1;
 }
+
+
+/* Поиск в header */
+.header_search-block {
+  position: absolute;
+  top: -60%;
+  right: -56px;
+
+  display: none;
+  padding: 16px 18px 16px 32px;
+  min-width: 539px;
+
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+
+}
+
+.header_search-block--active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__form {
+  max-width: 412px;
+}
+
+.header__input {
+  width: 412px;
+
+  border: none;
+  border-bottom: 1px solid #cacaca;
+  outline: none;
+}
+
+.header__input::placeholder {
+  color: #cacaca;
+}
+
+.header__close-icon {
+  display: inline-block;
+}
+
+.header__search-open--active {
+  fill: #FF9900;
+}
+/* Поиск в header */
 
 /* endheader */
 
@@ -606,18 +655,11 @@ h3 {
 
 .faq__link ellipse,
 .faq__link path {
-  transition-property: fill;
+  transition-property: fill, transform;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-timing-function);
 }
 
-
-
-.faq__link:focus ellipse,
-.faq__link:hover ellipse {
-  fill: var(--order-default-color);
-  outline: none;
-}
 
 .faq__link:active ellipse,
 .faq__link:active ellipse {
@@ -636,6 +678,10 @@ h3 {
 
 .faq__icon--mobile {
   display: none;
+}
+
+.faq__icon--open {
+  transform: rotate(45deg);
 }
 
 /* endFAQ */
@@ -841,11 +887,10 @@ h3 {
 
 }
 
-    /* Открытие бургер меню ------------------------------------------------------- */
+/* Открытие бургер меню ------------------------------------------------------- */
 
 
 /* Табы */
-
 
 .tab-item {
   display: none;
@@ -855,6 +900,6 @@ h3 {
   display: flex;
 }
 
-
-
 /* Табы */
+
+

@@ -70,6 +70,13 @@
     fill: #fff;
   }
 
+  .faq__link:focus ellipse,
+  .faq__link:hover ellipse {
+  fill: var(--order-default-color);
+  outline: none;
+}
+
+
   .footer__link:focus {
     color: #CACACA;
     outline: 2px solid var(--order-default-color);

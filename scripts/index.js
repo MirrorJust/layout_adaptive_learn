@@ -25,4 +25,16 @@ menuLinks.forEach(function(el) {
 
 // endburger-menu
 
+// serch string
 
+let searchOpen = document.querySelector('.header__search-open');
+let searchCLose = document.querySelector('.header__search-close');
+searchOpen.onclick = function() {
+  document.querySelector('.header_search-block').classList.add('header_search-block--active');
+  document.querySelector('.header__search-open').classList.add('header__search-open--active');
+};
+searchCLose.onclick = function() {
+  document.querySelector('.header_search-block').classList.remove('header_search-block--active');
+};
+
+// search string
