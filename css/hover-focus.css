@@ -5,7 +5,7 @@
     outline: none;
   }
 
-  .header__main-logo:focus-within {
+  .header__left-block:focus-within {
     outline: 2px solid #FF9900;
   }
 
