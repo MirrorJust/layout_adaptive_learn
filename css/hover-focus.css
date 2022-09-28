@@ -5,6 +5,10 @@
     outline: none;
   }
 
+  .header__main-logo:focus-within {
+    outline: 2px solid #FF9900;
+  }
+
   .header__link:focus {
     outline: 2px solid #FF9900;
   }
@@ -49,6 +53,7 @@
 
     background-color: #666;
     border: 1px solid #666;
+    outline: none;
   }
 
   .faq__item:first-child > .faq__link:focus,

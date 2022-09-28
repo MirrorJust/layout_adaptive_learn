@@ -56,7 +56,7 @@
           </nav>
         </div>
         <div class="header__left-block">
-          <a href="#" class="header__link">
+          <a href="#" class="header__link-img" tabindex="1">
             <img class="header__main-logo" src="img/icon/main-logo.svg" alt="Евклид логотип">
           </a>
         </div>
@@ -129,7 +129,7 @@
         <p class="hero__description">
           Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
         </p>
-        <button class="btn hero__btn btn-reset">Заказать расчёт</button>
+        <button class="btn hero__btn btn-reset" tabindex="0">Заказать расчёт</button>
 
       </section>
 
@@ -145,7 +145,7 @@
               <p class="content about-us__description">
                 Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов
               </p>
-              <a href="#" class="about-us__link">Подробнее</a>
+              <a href="#" class="about-us__link" tabindex="0">Подробнее</a>
             </div>
           </div>
           <div class="about-us__left-block--mobile">
@@ -488,10 +488,13 @@
         <div class="footer__middle-block">
           <h2 class="footer__heading">Оставить заявку</h2>
           <form class="form footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <label class="footer__label visually-hedden" for="name-field">Введите фаимилию имя и отвечство</label>
             <input class="form__input" type="text" id="name-field" name="first-middle-last_name_user" placeholder="Фамилия, имя и отчество*">
             <br>
+            <label class="footer__label visually-hedden" for="email-field">Введите email</label>
             <input class="form__input" type="email" id="email-field" name="email_user" placeholder="Email*">
             <br>
+            <label class="footer__label visually-hedden" for="message-field">Введите комментарий</label>
             <textarea class="form__textarea" name="message_user" id="message-field" cols="30" rows="10" placeholder="Сообщение"></textarea>
             <br>
             <div class="form__interactive-elements">
