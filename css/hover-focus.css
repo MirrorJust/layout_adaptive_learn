@@ -1,24 +1,28 @@
 @media (min-width: 1000px) {
-  .btn:focus,
+  .btn:focus-visible,
   .btn:hover {
     background-color: #FFB84D;
     outline: none;
   }
 
-  .header__left-block:focus-within {
+  /* .header__left-block:focus-within {
+    outline: 2px solid #FF9900;
+  } */
+
+  .header__link-img {
     outline: 2px solid #FF9900;
   }
 
-  .header__link:focus {
+  .header__link:focus-visible {
     outline: 2px solid #FF9900;
-  }
+ }
 
   .header__link:hover {
     border-bottom: 2px solid #FF9900;
     outline: none;
   }
 
-  .header__search:focus {
+  .header__search:focus-visible {
     outline: 2px solid #FF9900;
   }
 
@@ -32,13 +36,13 @@
     outline: none;
   }
 
-  .about-us__link:focus,
+  .about-us__link:focus-visible,
   .about-us__link:hover {
     background-color: var(--order-default-color);
     outline: none;
   }
 
-  .step-list__button:focus {
+  .step-list__button:focus-visible {
     outline: 2px solid var(--order-default-color);
   }
 
@@ -47,7 +51,7 @@
     outline: none;
   }
 
-  .step-block__link:focus,
+  .step-block__link:focus-visible,
   .step-block__link:hover {
     color: #fff;
 
@@ -56,13 +60,13 @@
     outline: none;
   }
 
-  .faq__item:first-child > .faq__link:focus,
+  .faq__item:first-child > .faq__link:focus-visible,
   .faq__item:first-child > .faq__link:hover {
     border-top: 1px solid var(--order-default-color);
     outline: none;
   }
 
-  .faq__link:focus,
+  .faq__link:focus-visible,
   .faq__link:hover {
     border-top: 1px solid var(--order-default-color);
     border-bottom: 1px solid var(--order-default-color);
@@ -70,19 +74,19 @@
     outline: none;
   }
 
-  .faq__link:focus path,
+  .faq__link:focus-visible path,
   .faq__link:hover path {
     fill: #fff;
   }
 
-  .faq__link:focus ellipse,
+  .faq__link:focus-visible ellipse,
   .faq__link:hover ellipse {
   fill: var(--order-default-color);
   outline: none;
 }
 
 
-  .footer__link:focus {
+  .footer__link:focus-visible {
     color: #CACACA;
     outline: 2px solid var(--order-default-color);
   }
@@ -92,7 +96,7 @@
     outline: none;
   }
 
-  .footer__link:focus path {
+  .footer__link:focus-visible path {
     fill: #666;
   }
 
@@ -100,10 +104,10 @@
     fill: var(--order-default-color);
   }
 
-  .form__input:focus,
+  .form__input:focus-visible,
   .form__input:hover,
   .form__input:active,
-  .form__textarea:focus,
+  .form__textarea:focus-visible,
   .form__textarea:hover,
   .form__textarea:active {
     background-color: #666;
@@ -113,7 +117,7 @@
 
 
 @media (max-width: 999px) {
-  .step-list__button:focus {
+  .step-list__button:focus-visible {
     color: #000;
   }
 
